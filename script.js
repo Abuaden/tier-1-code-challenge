@@ -1,6 +1,6 @@
 // 1. Start with the number 29 and set that equal to a variable named highScore;
 
-let highScore = 29
+let highScore = 29;
 
 // 2. Make a new empty array called myScrabbleTiles.
 let myScrabbleTiles = [];
@@ -19,7 +19,8 @@ let myScrabbleTiles = [];
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
 
-myScrabbleTiles.pop();
+let removedTile = myScrabbleTiles.pop();
+console.log(removedTile);
 
 
 // 5. Add the following new tile to myScrabbleTiles:
@@ -42,8 +43,18 @@ myScrabbleTiles.pop();
 
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
 
+let myScore = calculateScore(myScrabbleTiles)
+console.log('Total Score for myScrabblesTiles is', myScore);
+
 
 // 8. Check whether or not your score is higher than the highScore. If your score is higher, change highScore to the new high score.
+
+if(myScore > highScore){
+highScore= myScore
+console.log('highScore updated to:', highScore);
+}
+
+
 
 
 // DONE!
